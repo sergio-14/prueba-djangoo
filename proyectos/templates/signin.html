@@ -1,0 +1,34 @@
+{% extends 'principal.html' %}
+{% load static %}
+{% block content %}
+ {{error}}
+ 
+ <form action="/signin/" method="POST" class="form-group">
+    {% csrf_token %}
+    <section style="background-image:url('{% static 'main/img/register1.gif' %}');background-repeat: no-repet;background-size:85%"> 
+        <div class="form-box">  
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" name="username" autofocus="" autocapitalize="none"
+                         autocomplete="username" maxlength="150" required="" id="id_username">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" 
+                        autocomplete="current-password" required="" id="id_password">
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        
+                    </div>
+                    <button id="btnlogin">INGRESAR</button>
+                </form>
+            </div>
+        </div>
+    </section>
+ </form>
+{% endblock  %}

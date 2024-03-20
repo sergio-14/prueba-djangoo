@@ -1,0 +1,253 @@
+
+body {
+    background-size: cover;
+    background: linear-gradient(#240442,
+    rgba(14, 14, 14, 0.945));
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+    grid-area: center; 
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background: rgba(0, 0, 0, 0.863);
+    background-position: center;
+    background-size: cover;
+}
+#txt{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    font-size: 30px;
+    color: rgb(10, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:Franklin Gothic Medium;
+
+}
+#tut{
+    font-family: monospace;
+    color: #ee7512;
+    font-size: 30px;
+    font-family:Franklin Gothic Medium;
+}
+#pr{
+    font-size: 60px;
+    color: #1abff1;
+    font-family: monospace;
+}
+#prr{
+    font-size: 25px;
+    color: #3854f8;
+    font-family: Franklin Gothic Medium;
+}
+#vna {
+    background-color: rgba(3, 20, 3, 0.568);
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(238, 226, 226, 0.89);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+#btnlogin{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #f0e9e9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+#iconlogo{
+    width: 130px;
+    height: 130px;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.274);
+    color: #ff6811;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+  #oofcam{
+    background-color: #090214;
+  }
+  #offcanvasDarkNavbarLabel{
+    color: #ffffff;
+
+  }
+#er{
+    background-color: #130803;
+}
+#cardw{
+    padding: 15px;
+    right: -50px;
+    background-color: #0f041a;
+    border-color: #ff6811;
+    color: #ee7512;
+    font-size: 20px;
+}
+#kk{
+    background: transparent;
+    color: #ff6811;
+}
+#yuu{
+    background: transparent;
+    color: #ee7512;
+}
+#tbl{
+    background-color: #0602149f;
+    color: #ee7512;
+    font-size: 20px;
+}
+/*botones animados */
+#boton2 {
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 22px 5px;
+    color: rgb(255, 110, 19);
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 8px;
+}
+
+#boton2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            red, blue, deeppink, rgb(255, 145, 55),
+            red, blue, deeppink, rgb(255, 125, 50));
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
